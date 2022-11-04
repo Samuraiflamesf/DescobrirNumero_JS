@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!-- Styles Custom -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b04ef94895.js" crossorigin="anonymous"></script>
+  <!-- Icone e Nome do site -->
+  <link rel="shortcut icon" href="bootstrap/FlameBox.ico">
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="bootstrap/jquery-3.6.0.min.js"></script>
+  <!-- Titulo -->
+  <title>
+
+  </title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center flex-column">
+  <div class="alert alert-danger d-none" role="alert" id="alertErro">
+    Aposta invalida!
+  </div>
+  <div class="alert alert-primary d-none" role="alert" id="alertSmall">
+    👀 O número para ser encontrado é MENOR 😰
+  </div>
+  <div class="alert alert-primary d-none" role="alert" id="alertBig">
+    👀 O número para ser encontrado é MAIOR 😨
+  </div>
+<div class="alert alert-success d-none" role="alert" id="alertSuccess">
+  
+  </div>
+  <div class="card area">
+    <div class="card-body m-5 p-2">
+      <div class="row h2 ">
+        Descobrir o número de 0 a 100
+      </div>
+      <div class="row m-auto mt-3 mb-3 p-3">
+        <input type="text" class="text-center m-auto" id="bet" placeholder="Digite um número">
+      </div>
+      <div class="row mt-2">
+        <button class="btn btn-warning w-50 m-auto" id="btn" onclick="verifyNumber()">Enviar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Javascript Custom -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
