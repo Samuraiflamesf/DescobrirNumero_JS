@@ -1,20 +1,28 @@
 var numberToFind = 0;
 var attempt = 0;
+let alertErro = document.querySelector("#alertErro");
+let alertBig = document.querySelector("#alertBig");
+let alertSmall = document.querySelector("#alertSmall");
+let alertSuccess = document.querySelector("#alertSuccess");
+let button = document.querySelector("#btn");
+let area = document.querySelector(".area");
 
 function buttonOff() {
-  document.querySelector("#btn").classList.add("placeholder");
-  document.querySelector("#btn").classList.add("disabled");
+  button.classList.add("placeholder");
+  button.classList.add("disabled");
 }
 function buttonOn() {
-  document.querySelector("#btn").classList.remove("placeholder");
-  document.querySelector("#btn").classList.remove("disabled");
+  button.classList.remove("placeholder");
+  button.classList.remove("disabled");
 }
 function alertClean() {
-  document.querySelector("#alertBig").classList.add("d-none");
-  document.querySelector("#alertSmall").classList.add("d-none");
-  document.querySelector("#alertErro").classList.add("d-none");  
+  alertErro.classList.add("d-none");
+  alertSmall.classList.add("d-none");
+  alertBig.classList.add("d-none");
+  alertSuccess.classList.add("d-none");
+  area.classList.remove("shake-horizontal");
+  area.classList.remove("shake-constant");
 }
-
 function refresh() {
   //Gerar o numero aleatório
   numberToFind = parseInt(Math.random() * 100);
@@ -25,33 +33,48 @@ function verifyNumber() {
   alertClean();
   buttonOff();
   let bet = document.querySelector("#bet").value;
-  console.log(bet);
 
   if (bet > 100 || bet < 1) {
-    document.querySelector("#alertErro").classList.remove("d-none");
-    buttonOn()
+    area.classList.remove('animate__shakeX')
+    setTimeout(() => {
+      area.classList.add('animate__animated')
+      area.classList.add('animate__shakeX')
+      alertErro.classList.remove("d-none");
+    }, 500);
+    buttonOn();
     return;
-  }
-  if (bet > numberToFind) {
+  } else if (bet > numberToFind) {
     attempt++;
-    setInterval(()=>{
-      document.querySelector("#alertBig").classList.remove("d-none");
-      buttonOn()
-    },2000)
-  }
-  if (bet < numberToFind) {
+    setTimeout(() => {
+      alertSmall.classList.remove("d-none");
+    }, 300);
+    buttonOn();
+  } else if (bet < numberToFind) {
     attempt++;
-    setInterval(()=>{
-      document.querySelector("#alertSmall").classList.remove("d-none");
-      buttonOn()
-    },2000)
-  }
-  else{
-    console.log(attempt);
-    let alertSucess =    document.querySelector("#alertSuccess")
-    alertSucess.innerHTML('🪐 Parabéns você acertou!! Com '+attempt+' erros!');
-    alertSucess.classList.remove
-
+    setTimeout(() => {
+      alertBig.classList.remove("d-none");
+    }, 300);
+    buttonOn();
+  } else if (bet == numberToFind) {
+    area.classList.remove('animate__rubberBand')
+    setTimeout(() => {
+      area.classList.add('animate__animated')
+      area.classList.add('animate__rubberBand')
+      alertSuccess.innerHTML = `🪐 Parabéns você acertou!!<br>  Com ${attempt} erros! 😏🥳 `;
+      alertSuccess.classList.remove("d-none");
+    }, 500);
+    
+    buttonOn();
+    refresh();
+  } else {
+    area.classList.remove('animate__shakeX')
+    setTimeout(() => {
+      area.classList.add('animate__animated')
+      area.classList.add('animate__shakeX')
+      alertErro.classList.remove("d-none");
+    }, 500);
+    buttonOn();
+    return;
   }
 }
 
