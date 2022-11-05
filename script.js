@@ -7,6 +7,12 @@ let alertSuccess = document.querySelector("#alertSuccess");
 let button = document.querySelector("#btn");
 let area = document.querySelector(".area");
 
+document.addEventListener('keypress',(e)=>{
+  if(e.key === "Enter"){
+    verifyNumber()
+  }
+})
+
 function buttonOff() {
   button.classList.add("placeholder");
   button.classList.add("disabled");
@@ -26,9 +32,7 @@ function alertClean() {
 function refresh() {
   //Gerar o numero aleatório
   numberToFind = parseInt(Math.random() * 100);
-  console.log(numberToFind);
 }
-
 function verifyNumber() {
   alertClean();
   buttonOff();
