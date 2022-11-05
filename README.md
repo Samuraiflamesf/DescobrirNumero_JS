@@ -49,4 +49,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 **Link 1**
 
-- b7web
+- Gustavo Neitzke
