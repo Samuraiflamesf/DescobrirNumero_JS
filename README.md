@@ -1,6 +1,6 @@
 <div align="center">
   
-# Descobrir o número de 0 a 100 🎲 <a href="https://descobrirnumerojs.netlify.app/">Link da Aplicação</a>
+# Descobrir o número de 1 a 100 🎲 <a href="https://descobrirnumerojs.netlify.app/">Link da Aplicação</a>
 
 </div>
 
