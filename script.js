@@ -63,8 +63,9 @@ function verifyNumber() {
       alertSuccess.innerHTML = `🪐 Parabéns você acertou!!<br>  Com ${attempt} erros! 😏🥳 `;
       alertSuccess.classList.remove("d-none");
     }, 500);
-    
     buttonOn();
+    
+    
     refresh();
   } else {
     area.classList.remove('animate__shakeX')
