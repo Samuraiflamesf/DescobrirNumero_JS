@@ -1,10 +1,10 @@
 <div align="center">
   
-# Bateria Eletronica 🎼 <a href="https://bateriaeletronicajs.netlify.app/">Link da Aplicação</a>
+# Descobrir o número de 0 a 100 🎲 <a href="https://descobrirnumerojs.netlify.app/">Link da Aplicação</a>
 
 </div>
 
-![Video-Aplicação](<https://raw.githubusercontent.com/Samuraiflamesf/BateriaEletronica_Js/main/assets/bateriaeletronicajs.netlify.app_(Nest%20Hub%20Max).png>)
+![Video-Aplicação](<https://github.com/Samuraiflamesf/DescobrirNumero_JS/blob/main/bootstrap/descobrirnumerojs.netlify.app_(Nest%20Hub).png?raw=true>)
 
 <div align="center">
   
@@ -16,7 +16,7 @@
 
 ![status-finalizado](https://user-images.githubusercontent.com/62897976/185768561-589083e1-f18f-480b-9709-0ca24acf9c6d.svg)
 
-> Resumo do Projeto: Bateria Eletrónica 🎼 utilizando Bootstrap e Js!
+> Resumo do Projeto: Jogo feito em Js com Bootstrap, objetivo do jogo é adivinhar qual é o número aleatório gerado!
 
 ## 🎯 Implementações/Features
 
@@ -24,7 +24,7 @@
 - [x] Estilos Globais do Projeto
 - [x] Estruturação/Estilização Avançada
 - [x] Projeto Finalizado
-- [ ] Resolvendo Bugs
+- [x] Resolvendo Bugs
 
 ## 🤝 Colaboradores
 
@@ -49,4 +49,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 **Link 1**
 
-- b7web
+- Gustavo Neitzke
