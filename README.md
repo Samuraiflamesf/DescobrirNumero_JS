@@ -4,7 +4,7 @@
 
 </div>
 
-![Video-Aplicação](<https://github.com/Samuraiflamesf/DescobrirNumero_JS/blob/main/bootstrap/descobrirnumerojs.netlify.app_(Nest%20Hub).png?raw=true>)
+https://user-images.githubusercontent.com/62897976/201479401-e753bbb7-e395-4d24-8327-20dc55f7e089.mp4
 
 <div align="center">
   
