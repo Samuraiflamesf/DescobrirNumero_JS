@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/62897976/201479401-e753bbb7-e395-4d24-
 
 </div>
 
-# 📄 Tipo do Projeto/Nome do Projeto
+# 📄 DescobrirNúmeroJS🎲
 
 ![status-finalizado](https://user-images.githubusercontent.com/62897976/185768561-589083e1-f18f-480b-9709-0ca24acf9c6d.svg)
 
